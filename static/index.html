@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="HelloApp">
+<head>
+  <meta charset="utf-8">
+  <title>Hello world !</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="content" ng-controller="HelloController as $ctrl">
+
+
+    <div class="list">
+      <hr>
+      <h2>{{ $ctrl.title }}</h2>
+      <ul>
+        <li ng-repeat="item in $ctrl.hellos">
+          <button type="button" ng-click="$ctrl.DelMsg(item.id)">Delete</button>
+          {{ item.name }} say «{{ item.msg }}»
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="new">
+      <hr>
+      <h3>Add new message</h3>
+      Name : <input type="text" ng-model="$ctrl.name">
+      Msg : <input type="text" ng-model="$ctrl.msg">
+      <button type="button" ng-click="$ctrl.AddMsg()">Add msg</button>
+      <hr>
+    </div>
+
+    <div class="error" ng-if="$ctrl.error">
+      {{ $ctrl.error }}
+      <hr>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>

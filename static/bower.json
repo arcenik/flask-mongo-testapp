@@ -1,0 +1,21 @@
+{
+  "name": "Flask-Mongo-Test",
+  "homepage": "https://github.com/arcenik/flask-mongo-testapp",
+  "authors": [
+    "Francois Scala <github@arcenik.net>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.3"
+  }
+}
