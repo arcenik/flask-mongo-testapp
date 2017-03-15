@@ -2,8 +2,7 @@
 
 angular.module('HelloApp', [])
 .controller('HelloController', HelloController)
-.service('HelloService', HelloService)
-.constant('API', 'http://localhost:5000'); // API-CONFIG
+.service('HelloService', HelloService);
 
 
 /************************************************************/
