@@ -16,9 +16,13 @@
       <ul>
         <li ng-repeat="item in $ctrl.hellos">
           <button type="button" ng-click="$ctrl.DelMsg(item.id)">Delete</button>
-          {{ item.name }} say «{{ item.msg }}»
+          {{ item.name }} say « {{ item.msg }} »
         </li>
       </ul>
+      <p ng-if="$ctrl.hellos.length == 0">
+        No message :-( <br>
+        Add one below.
+      </p>
 
     </div>
 
